@@ -51,20 +51,12 @@
 
   <!-- Banniere -->
 	<section id="banniere">
-		<p>Bonjour à tous et bienvenue sur mon site web !<br />
-      Je suis étudiant chez Campus Academy situé à Nantes.<br />
-      Sur ce site, vous pourrez découvrir qui je suis, ma personnalité, ma formation ainsi que les projets qui me tiennent à coeur 
-      et que je souhaite réaliser au plus vite !<br />
-      Sur la partie contact de mon site, n'hésitez pas à me poser d'éventuelles questions auxquelles je pourrais répondre ou à 
-      me déposer une recommandation suite à une expérience à vos côtés qui s'est terminée de manière satisfaisante.<br />
-      Bonne visite !
-    </p>
 		<ul class="actions">
 			<li><a href="#" class="button">Contact</a></li>
 		</ul>
   </section>
   
-  <!-- section une -->
+  <!-- section présentation -->
   <section id="section" class="section_style">
     <div class="container_section_1">
 		<div class="ligne">
@@ -84,7 +76,7 @@
 	</div>
   </section>
 
-  <!-- section deux -->
+  <!-- section formation -->
   <section id="section" class="section_style style2">
     <div class="container_section_2">
 		<header class="major">
@@ -111,57 +103,54 @@
 				</div>
 			</div>
 	  	</div>
-		  	<ul class="actions">
-			  <li><a href="#" class="button special big">Nulla luctus</a></li>
-			  <li><a href="#" class="button big">Sed vulputate</a></li>
-		  	</ul>
 	</div>
   </section>
 
   <!-- section trois -->
-  <section id="section" class="section_style">
+  <section id="section" class="section_style style3">
 		<div class="container_section_3">
 			<header class="major special">
-				<h2>Mauris vulputate dolor</h2>
-				<p>Feugiat sed lorem ipsum magna</p>
+				<h2>Mes Projets</h2>
+				<p>Tous les projets qui me tiennent à coeur</p>
 			</header>
-			<div class="feature-grid">
-				<div class="feature">
-					<div class="image rounded"><img src="images/pic04.jpg" alt="" /></div>
+
+			<div class="grilles_de_projets">
+				<div class="projet_bis">
+					<div class="image rounded"><img src="./css/icones/sitevitrinelogo.png" alt="capture_ecran_site_metagaya" /></div>
 					<div class="content">
 						<header>
-							<h4>Lorem ipsum</h4>
-							<p>Lorem ipsum dolor sit</p>
+							<h4>Projet Campus Factory</h4>
+							<p>Campus Academy Nantes</p>
 						</header>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+						<p>Création d'un site web dit "vitrine" pour un studio d'animation afin de permettre l'exposition au grand public des oeuvres et augmenter leur visibilité</p>
 					</div>
 				</div>
-				<div class="feature">
-					<div class="image rounded"><img src="images/pic05.jpg" alt="" /></div>
+				<div class="projet_bis">
+					<div class="image rounded"><img src="./css/icones/siteweblogo.png" alt="capture_ecran_site_portfolio" /></div>
 					<div class="content">
 						<header>
-							<h4>Recusandae nemo</h4>
-							<p>Ratione maiores a, commodi</p>
+							<h4>Projet Campus Contest</h4>
+							<p>Campus Academy Nantes</p>
 						</header>
-						<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
+						<p>Création d'un portfolio dans le cadre d'un projet d'école personnel et professionnel</p>
 					</div>
 				</div>
-				<div class="feature">
-					<div class="image rounded"><img src="images/pic06.jpg" alt="" /></div>
+				<div class="projet_bis">
+					<div class="image rounded"><img src="./css/icones/nickellogo.png" alt="logo_nickel_banque" /></div>
 					<div class="content">
 					  <header>
-							<h4>Laudantium fugit</h4>
-							<p>Possimus ex reprehenderit eaque</p>
+							<h4>Stage de 2 mois en tant que technicien informatique</h4>
+							<p>Nickel Banque, Nantes</p>
 						</header>
-						<p>Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.</p>
+						<p>Dans le cadre d'un projet d'école ainsi que pour mon épanouissement professionnel, j'ai décidé de faire un stage de 2 mois chez Nickel Banque.</p>
 					</div>
 				</div>
-				<div class="feature">
-					<div class="image rounded"><img src="images/pic07.jpg" alt="" /></div>
+				<div class="projet_bis">
+					<div class="image rounded"><img src="./css/icones/logoquovadis.png" alt="logo_quo_vadis" /></div>
 					<div class="content">
 						<header>
-							<h4>Porro aliquam</h4>
-							<p>Quaerat, excepturi eveniet laboriosam</p>
+							<h4>Alternance en tant qu'administrateur systèmes et réseaux junior</h4>
+							<p>Quo Vadis 1954, Nantes</p>
 						</header>
 					  <p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
 					</div>
@@ -170,28 +159,39 @@
 		</div>
 	</section>
 
+	<!--Partie CV-->
+	<section id="four" class="section_style style4 special">
+		<div class="container">
+			<header class="major">
+				<h2>Mon CV ? Bien sur, le voici !</h2>
+			</header>
+			<ul class="actions">
+				<li><a href="#" class="button special big">Telecharger</a></li>
+			</ul>
+		</div>
+	</section>
+	
   <!-- Footer -->
-  <footer>
-    <div class="icones">
-      <div class="premiers_icones">
-        <div class="pinterest">
-          <a href="https://www.pinterest.fr/kevincharneau85/" target="_blank" title="pinterest.com"><img src="icones/pinterest.png" alt="Pinterest" width="65em" /></a>
-        </div>
+  <footer id="five" class="section_style style5">
+	<div class="container">
+    	<ul class="icones">
+        	<li class="icon">
+          		<a href="https://www.pinterest.fr/kevincharneau85/" target="_blank" title="pinterest.com"><img src="./css/icones/pinterest.png" alt="Pinterest" width="65em" /></a>
+			</li>
 
-        <div class="linkedin">
-          <a href="https://www.linkedin.com/in/k%C3%A9vin-charneau-4972b5183/" target="_blank" title="linkedin.com"><img src="icones/linkedin1.png" alt="Linkedin" width="63em" /></a>
-        </div>
-      </div>
-      <div class="derniers_icones">
-        <div class="instagram">
-          <a href="https://www.instagram.com/le_vieux_k/" target="_blank" title="instagram.com"><img src="icones/insta.png" alt="Instagram" width="63em" /></a>
-        </div>
+        	<li class="icon">
+          		<a href="https://www.linkedin.com/in/k%C3%A9vin-charneau-4972b5183/" target="_blank" title="linkedin.com"><img src="./css/icones/linkedin1.png" alt="Linkedin" width="63em" /></a>
+			</li>
 
-        <div class="twitter">
-          <a href="https://twitter.com/Moic_estdieu" target="_blank" title="twitter.com"><img src="icones/twitter.png" alt="Twitter" width="63em" /></a>
-        </div>
-      </div>
-    </div>
+        	<li class="icon">
+          		<a href="https://www.instagram.com/le_vieux_k/" target="_blank" title="instagram.com"><img src="./css/icones/insta.png" alt="Instagram" width="63em" /></a>
+			</li>
+
+        	<li class="icon">
+          		<a href="https://twitter.com/Moic_estdieu" target="_blank" title="twitter.com"><img src="./css/icones/twitter.png" alt="Twitter" width="63em" /></a>
+			</li>
+		</ul>
+	</div>
 
     <div class="mentions_legales"> © Kévin Charneau 2020 <a href="mentionslegales.php">Mentions légales</a></div>
   </footer> 

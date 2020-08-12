@@ -47,20 +47,48 @@
     padding: 0;
 }
 
+h4{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0 0 1em 0;
+}
+
+header h4+p{
+    font-size: 0.9em;
+    margin-top: -0.6em;
+    line-height: 1.5em;
+}
+
+header p{
+    color: #aaa;
+    position: relative;
+    margin: 0 0 1.5em 0;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 14px;
+    margin: 0 0 2em 0;
+}
+
 body {
-    font-family: 'Caladea Bold Italic', sans-serif;
+    font-family: Raleway, sans-serif;
     line-height: 1.4;
 }
 
 
 #banniere {
-    padding: 15em 0 5em 0;
+    padding: 26em 0 3em 0;
     background-attachment: fixed;
     background-image: url("./icones/overlay.png"), url("./icones/fond2.jpg");
     background-position: center top;
     background-size: cover;
     line-height: 1.75;
     text-align: center;
+}
+
+#banniere li{
+    margin-top: 14rem;
 }
 
 #banniere h2 {
@@ -96,11 +124,15 @@ body {
     text-align: right;
 }
 
+ul{
+    list-style: none;
+}
+
 .button{
     background-color: #f32853;
     font-size: 1.35em;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 4px;
 }
 
@@ -169,7 +201,7 @@ header.majeur{
 
 header.major{
     font-family: Raleway, sans-serif;
-    margin: 0 0 2em 0;
+    margin: 0 0 3em 0;
     font-size: 2em;
     line-height: 1.5;
     text-align: center;
@@ -189,7 +221,7 @@ header.major p {
 }
 
 .image_bac, .image_licence, .image_bachelor{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -219,4 +251,93 @@ header.major p {
 .ligne.section_2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.container_section_3{
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grilles_de_projets{
+    position: relative;
+}
+
+.projet_bis{
+    display: inline-block;
+    float: left;
+    margin-bottom: 3em;
+    width: 50%;
+}
+
+.image.rounded img {
+    height: auto;
+    width: 175px;
+    border: solid 0.5em rgba(144,144,144,0.25);
+    border-radius: 100%;
+}
+
+.content{
+    width: 60%;
+}
+
+.grilles_de_projets.projet_bis:nth-child(odd) .image img{
+    display: inline;
+    max-width: 100%;
+}
+
+.grilles_de_projets .projet_bis:nth-child(odd) .content, .grilles_de_projets .projet_bis:nth-child(odd) .image{
+    float: right;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.grilles_de_projets .projet_bis:nth-child(even) .content, .grilles_de_projets .projet_bis:nth-child(even) .image{
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.grilles_de_projets::after{
+    clear: both;
+    content:'';
+    display: block;
+}
+
+.section_style.style4{
+    background-attachment: fixed;
+    background-image: url("./icones/bandwidth-blancetnoir.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.container{
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section_style.style4 header.major h2{
+    color: #ffffff;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.icon{
+    padding: 0 2em 0 2em;
+}
+
+.mentions_legales{
+    text-align: center;
+}
+
+.mentions_legales a{
+    color: #484848;
 }
