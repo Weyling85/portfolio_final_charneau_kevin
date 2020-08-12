@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../font/Segoe UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../font/Segoe UI Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../font/Segoe UI Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../font/Segoe UI Bold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Caladea Bold Italic';
+    src: url('../font/Caladea-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url('../font/MontserratSubrayada-Regular.ttf');
+}
+
+:root {
+    --primary-color: rgba(13, 110, 139, 0.30);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header h1{
+    font-size: 3rem;
+}
+
+.header h5 {
+    font-size: 1rem;
+}
+
+header{
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.titre_principal {
+    text-align: right;
+    margin-right: 14%;
+    font-family: 'Montserrat', sans-serif;
+    color: #BBD2E7;
+}
+
+.statut {
+    margin-top: 1rem;    
+}
+
+.etudes{
+    margin-top: 1rem;
+}
+
+label{
+    width: 20vw;
+    border: 1px solid yellow;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: rgba(13, 110, 139, 0.80);
+    color: white;
+}
+
+body{
+    background: url('../icones/fond.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    font-family: 'Caladea Bold Italic', sans-serif;
+    line-height: 1.4;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3vh;
+}
+
+.icones{
+    width: 50%;
+    opacity: 40%;
+}
+
+.premiers_icones{
+    display: flex;
+    flex-direction: row;
+}
+
+.derniers_icones{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.pinterest{
+    margin-left: 1rem;
+}
+.linkedin{
+    margin-left: 8rem;
+}
+.instagram{
+    margin-left: 8rem;
+}
+.twitter{
+    margin-left: 9rem;
+}
+
+.mentions_legales{
+    width: auto;
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.mentions_legales a{
+    color: #BBD2E7;
+}
