@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>kcharneau.com</title>
-	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
 </head>
 
@@ -21,11 +21,11 @@
             <div>
               <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="aboutme.php">About Me</a></li>
-                <li><a href="icones/cv.pdf" target="_blank">CV</a></li>
-                <li><a href="projets.php">Projets</a></li>
-                <li><a href="formation.php">Formation</a></li>
-                <li><a href="contact.php">Contact</a></li>
+				<li><a href="#section_1">About Me</a></li>
+				<li><a href="#section_2">Formation</a></li>
+                <li><a href="#section_3">Projets</a></li>
+				<li><a href="./css/icones/cv.pdf" target="_blank">CV</a></li>
+                <li><a href="#section_5">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -57,7 +57,7 @@
   </section>
   
   <!-- section présentation -->
-  <section id="section" class="section_style">
+  <section id="section_1" class="section_style">
     <div class="container_section_1">
 		<div class="ligne">
 			<div class="titre_section_1">
@@ -77,7 +77,7 @@
   </section>
 
   <!-- section formation -->
-  <section id="section" class="section_style style2">
+  <section id="section_2" class="section_style style2">
     <div class="container_section_2">
 		<header class="major">
 			<h2>Formations</h2>
@@ -107,7 +107,7 @@
   </section>
 
   <!-- section trois -->
-  <section id="section" class="section_style style3">
+  <section id="section_3" class="section_style style3">
 		<div class="container_section_3">
 			<header class="major special">
 				<h2>Mes Projets</h2>
@@ -160,19 +160,19 @@
 	</section>
 
 	<!--Partie CV-->
-	<section id="four" class="section_style style4 special">
+	<section id="section_4" class="section_style style4 special">
 		<div class="container">
 			<header class="major">
 				<h2>Mon CV ? Bien sur, le voici !</h2>
 			</header>
 			<ul class="actions">
-				<li><a href="#" class="button special big">Telecharger</a></li>
+				<li><a href="./css/icones/cv.pdf" class="button special big">Telecharger</a></li>
 			</ul>
 		</div>
 	</section>
 	
   <!-- Footer -->
-  <footer id="five" class="section_style style5">
+  <footer id="section_5" class="section_style style5">
 	<div class="container">
     	<ul class="icones">
         	<li class="icon">
@@ -193,7 +193,7 @@
 		</ul>
 	</div>
 
-    <div class="mentions_legales"> © Kévin Charneau 2020 <a href="mentionslegales.php">Mentions légales</a></div>
+    <div class="mentions_legales"> © Kévin Charneau 2020 <a href="./mentionslegales.php">Mentions légales</a></div>
   </footer> 
 </body>
 </html>
