@@ -87,35 +87,35 @@
   <!-- section deux -->
   <section id="section" class="section_style style2">
     <div class="container_section_2">
-			<header class="majeur">
-				<h2>Fusce ultrices fringilla</h2>
-				<p>Maecenas vitae tellus feugiat eleifend</p>
-			</header>
-		  <div class="ligne_section_2">
+		<header class="major">
+			<h2>Formations</h2>
+			<p>Différents diplômes venus de multiples domaines issus de ma curiosité...</p>
+		</header>
+		<div class="ligne section_2">
 		    <div class="Formation_1">
-				  <div class="image bac">
-					  <img src="./css/icones/bac.jpg" alt="logo_de_lycee" />
-					  <h3>Diplôme du Baccalauréat scientifique</h3>
-				  </div>
-			  </div>
-			  <div class="formation_2">
-				  <div class="image licence">
-					  <img src="./css/icones/licence.jpg" alt="logo_d'université" />
-					  <h3>Diplôme de Licence en Psychologie</h3>
-				  </div>
-			  </div>
-			  <div class="formation_3">
-				  <div class="image bachelor">
-					  <img src="./css/icones/bachelor.jpg" alt="logo_d'écolé_informatique'" />
-					  <h3>Bachelor 1 Informatique</h3>
-				  </div>
-			  </div>
+				  <div class="image_bac">
+					<img src="./css/icones/bac.jpg" alt="logo_de_lycee" />
+					<h3>Diplôme du Baccalauréat scientifique</h3>
+				</div>
+			</div>
+			<div class="formation_2">
+				<div class="image_licence">
+					<img src="./css/icones/licence.jpg" alt="logo_d_universite" />
+					<h3>Diplôme de Licence en Psychologie</h3>
+				</div>
+			</div>
+			<div class="formation_3">
+				<div class="image_bachelor">
+					<img src="./css/icones/bachelor.jpg" alt="logo_d_ecole_informatique'" />
+					<h3>Bachelor 1 Informatique</h3>
+				</div>
+			</div>
 	  	</div>
-		  <ul class="actions">
+		  	<ul class="actions">
 			  <li><a href="#" class="button special big">Nulla luctus</a></li>
 			  <li><a href="#" class="button big">Sed vulputate</a></li>
-		  </ul>
-	  </div>
+		  	</ul>
+	</div>
   </section>
 
   <!-- section trois -->
