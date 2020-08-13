@@ -1,32 +1,26 @@
 <?php 
 
-    //me connecte à la base de donnée 
-    //crée notre variable $pdo 
+    //Je me connecte à la base de donnée, je crée notre variable $pdo 
     include("db.php");
 
-    //si on a des données dans $_POST, 
-    //c'est que le form a été soumis
+    //si on a des données dans $_POST, c'est que le form a été soumis
     if(!empty($_POST)){
-        //par défaut, on dit que le formulaire est entièrement valide
-        //si on trouve ne serait-ce qu'une seule erreur, on 
-        //passera cette variable à false
+        //par défaut, on dit que le formulaire est entièrement valide, si on trouve ne serait-ce qu'une seule erreur, on passera cette variable à false
         $formIsValid = true;
 
-        //on fait un strip_tags sur tous les champs
-        //pour virer les balises HTML strip_tags(attaques XSS)
-        //on laisse le password tranquille par contre
+        //on fait un strip_tags sur tous les champs pour virer les balises HTML strip_tags(attaques XSS), on laisse le password tranquille par contre
         $email = strip_tags($_POST['email']);
         $lastname = strip_tags($_POST['lastname']);
         $firstname = strip_tags($_POST['firstname']);
         $enterprise = strip_tags($_POST['enterprise']);
         $message = strip_tags($_POST['message']);
 
-        //tableau qui stocke nos éventuels messages d'erreur
+        //Tableau qui stocke nos éventuels messages d'erreurs
         $errors = [];
 
-        //si le lastname est vide...
+        //Si le lastname est vide...
         if(empty($lastname) ){
-            //on note qu'on a trouvé une erreur ! 
+            //On note qu'on a trouvé une erreur
             $formIsValid = false;
             $errors[] = "Veuillez renseigner votre nom de famille !";
         }
@@ -40,13 +34,14 @@
             $errors[] = "Votre nom de famille est trop long !";
         }
 
-        //exactement pareil pour le prénom
-        //si le firstname est vide...
+        //Exactement pareil pour le prénom
+        //Si le firstname est vide...
         if(empty($firstname) ){
-            //on note qu'on a trouvé une erreur ! 
+            //On note qu'on a trouvé une erreur
             $formIsValid = false;
             $errors[] = "Veuillez renseigner votre prénom !";
         }
+        
         //mb_strlen calcule la longueur d'une chaîne
         elseif(mb_strlen($firstname) <= 1){
             $formIsValid = false;
@@ -63,8 +58,8 @@
             $errors[] = "Votre email n'est pas valide !";
         }
 
-//si le formulaire est toujours valide... 
-if ($formIsValid == true){
+    //si le formulaire est toujours valide... 
+    if ($formIsValid == true){
     //on écrit tout d'abord notre requête SQL, dans une variable
     $sql = "INSERT INTO user_message
             (first_name, last_name, email, enterprise, message, date_message)
@@ -172,7 +167,7 @@ if ($formIsValid == true){
   </main>
 
   <footer>
-    <div class="mentions_legales"> © Kévin Charneau 2020 <a href="mentions_legales.html"> Mentions légales</a>
+    <div class="mentions_legales"> © Kévin Charneau 2020 <a href="mentionslegales.php"> Mentions légales</a>
     </div>
   </footer>
 </body>

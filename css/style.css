@@ -132,7 +132,7 @@ ul{
     background-color: #f32853;
     font-size: 1.35em;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 4px;
 }
 
@@ -320,6 +320,22 @@ header.major p {
 
 .section_style.style4 header.major h2{
     color: #ffffff;
+}
+
+.section_style.style5 h2{
+    margin: 0 0 0 0;
+}
+
+.section_style.style5 header.major{
+    margin: 0 0 2em 0;
+}
+
+ul{
+    margin: 0 0 4em 0;
+}
+
+ul.actions li{
+    display: inline-block;
 }
 
 .icones{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
   <!-- Banniere -->
 	<section id="banniere">
 		<ul class="actions">
-			<li><a href="#" class="button">Contact</a></li>
+			<li><a href="#section_5" class="button">Contact</a></li>
 		</ul>
   </section>
   
@@ -166,7 +166,7 @@
 				<h2>Mon CV ? Bien sur, le voici !</h2>
 			</header>
 			<ul class="actions">
-				<li><a href="./css/icones/cv.pdf" class="button special big">Telecharger</a></li>
+				<li><a href="./css/icones/cv.pdf" class="button special big" target="_blank">Telecharger</a></li>
 			</ul>
 		</div>
 	</section>
@@ -174,21 +174,30 @@
   <!-- Footer -->
   <footer id="section_5" class="section_style style5">
 	<div class="container">
+		<header class="major">
+			<h2>Me contacter</h2>
+		</header>
+
+		<ul class="actions">
+			<li><a href="./message.php" class="button special big" target="_blank">Message</a></li>
+			<li><a href="./recommandation.php" class="button big" target="_blank">Recommandation</a></li>
+		</ul>
+
     	<ul class="icones">
         	<li class="icon">
-          		<a href="https://www.pinterest.fr/kevincharneau85/" target="_blank" title="pinterest.com"><img src="./css/icones/pinterest.png" alt="Pinterest" width="65em" /></a>
+          		<a href="https://www.pinterest.fr/kevincharneau85/" target="_blank" title="pinterest.com"><img src="./css/icones/pinterest.png" alt="Pinterest" width="65px" /></a>
 			</li>
 
         	<li class="icon">
-          		<a href="https://www.linkedin.com/in/k%C3%A9vin-charneau-4972b5183/" target="_blank" title="linkedin.com"><img src="./css/icones/linkedin1.png" alt="Linkedin" width="63em" /></a>
+          		<a href="https://www.linkedin.com/in/k%C3%A9vin-charneau-4972b5183/" target="_blank" title="linkedin.com"><img src="./css/icones/linkedin1.png" alt="Linkedin" width="63px" /></a>
 			</li>
 
         	<li class="icon">
-          		<a href="https://www.instagram.com/le_vieux_k/" target="_blank" title="instagram.com"><img src="./css/icones/insta.png" alt="Instagram" width="63em" /></a>
+          		<a href="https://www.instagram.com/le_vieux_k/" target="_blank" title="instagram.com"><img src="./css/icones/insta.png" alt="Instagram" width="63px" /></a>
 			</li>
 
         	<li class="icon">
-          		<a href="https://twitter.com/Moic_estdieu" target="_blank" title="twitter.com"><img src="./css/icones/twitter.png" alt="Twitter" width="63em" /></a>
+          		<a href="https://twitter.com/Moic_estdieu" target="_blank" title="twitter.com"><img src="./css/icones/twitter.png" alt="Twitter" width="63px" /></a>
 			</li>
 		</ul>
 	</div>
