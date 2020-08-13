@@ -85,7 +85,7 @@
 		</header>
 		<div class="ligne section_2">
 		    <div class="formation_1">
-			<a href="#">
+			<a href="bac.html">
 				<div class="image_bac">
 					<img src="./css/icones/bac.jpg" alt="logo_de_lycee" /></a>
 					<h3>Diplôme du Baccalauréat scientifique</h3>

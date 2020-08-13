@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+    background-image: url("icones/bandwidth-blancetnoir.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: Raleway, sans-serif;
+    color: #F2F2F2;
+}
+
+header.majeur h2 {
+    text-decoration: underline;
+}
+
+.section_style.bac{
+    padding: 8em 0 3em 0;
+}
+
+.titre_bac {
+    width: 50%;
+}
+
+.description_bac {
+    width: 50%;
+}
+
+.button{
+    background-color: #f32853;
+    font-size: 1.35em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo_de_lycee img {
+    width: 450px;
+    height: auto;
+    border-radius: 2em;
+}
+
+.container_bac {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Segoe UI Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer ul.button_droit{
+    margin-right: 3em;
+}
+
+footer ul.button_gauche{
+    margin-left: 1em;
+}
