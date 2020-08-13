@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 @font-face {
     font-family: 'Segoe UI Regular';
     font-style: normal;
@@ -62,6 +64,13 @@ form{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Bold', sans-serif;
+    font-weight: 400;
 }
 
 .recommandation_affichage{
@@ -159,8 +168,7 @@ textarea{
     justify-content: flex-end;
     border: 2px solid yellow;
     border-radius: 16px;
-    padding-top: 2rem;
-    margin-bottom: 0.75rem;
+    padding: 2em 0 2em 0;
 }
 
 .carouseul h4{
@@ -178,7 +186,7 @@ textarea{
 body{
     background: url('icones/bandwidth-blancetnoir.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    font-family: 'Caladea Bold Italic', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.4;
 }
 

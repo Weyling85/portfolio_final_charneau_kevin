@@ -84,9 +84,10 @@
 			<p>Différents diplômes venus de multiples domaines issus de ma curiosité...</p>
 		</header>
 		<div class="ligne section_2">
-		    <div class="Formation_1">
-				  <div class="image_bac">
-					<img src="./css/icones/bac.jpg" alt="logo_de_lycee" />
+		    <div class="formation_1">
+			<a href="#">
+				<div class="image_bac">
+					<img src="./css/icones/bac.jpg" alt="logo_de_lycee" /></a>
 					<h3>Diplôme du Baccalauréat scientifique</h3>
 				</div>
 			</div>

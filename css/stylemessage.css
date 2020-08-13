@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 @font-face {
     font-family: 'Segoe UI Regular';
     font-style: normal;
@@ -43,6 +45,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Bold', sans-serif;
+    font-weight: 400;
 }
 
 main{
@@ -155,7 +164,7 @@ textarea{
 body{
     background: url('icones/bandwidth-blancetnoir.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    font-family: 'Caladea Bold Italic', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.4;
 }
 

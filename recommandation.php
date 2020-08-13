@@ -133,11 +133,11 @@ if ($formIsValid == true){
                 <div>
                   <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="aboutme.php">About Me</a></li>
-                    <li><a href="icones/cv.pdf" target="_blank">CV</a></li>
-                    <li><a href="projets.php">Projets</a></li>
-                    <li><a href="formation.php">Formation</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+				            <li><a href="index.php#section_1">About Me</a></li>
+				            <li><a href="index.php#section_2">Formation</a></li>
+                    <li><a href="index.php#section_3">Projets</a></li>
+				            <li><a href="./css/icones/cv.pdf" target="_blank">CV</a></li>
+                    <li><a href="index.php#section_5">Contact</a></li>
                   </ul>
                 </div>
               </div>

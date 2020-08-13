@@ -88,7 +88,7 @@ body {
 }
 
 #banniere li{
-    margin-top: 15rem;
+    margin-top: 14rem;
 }
 
 #banniere h2 {
@@ -220,6 +220,10 @@ header.major p {
     margin-top: -1em;
 }
 
+.formation_1, .formation_2{
+    margin-bottom: 3em;
+}
+
 .image_bac, .image_licence, .image_bachelor{
     margin-bottom: 40px;
     box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
@@ -235,17 +239,17 @@ header.major p {
 
 .image_bac img{
     height: auto;
-    width: 540px;
+    width: 400px;
 }
 
 .image_licence img{
     height: auto;
-    width: 570px;
+    width: 430px;
 }
 
 .image_bachelor img{
     height: auto;
-    width: 370px;
+    width: 420px;
 }
 
 .ligne.section_2 {
@@ -330,7 +334,7 @@ header.major p {
     margin: 0 0 2em 0;
 }
 
-ul{
+.section_style.style5 .container .actions{
     margin: 0 0 4em 0;
 }
 
