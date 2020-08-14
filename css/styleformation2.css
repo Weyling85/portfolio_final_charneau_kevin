@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+    background-image: url("icones/bandwidth-blancetnoir.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: Raleway, sans-serif;
+    color: #F2F2F2;
+}
+
+header.majeur h2 {
+    text-decoration: underline;
+}
+
+.titre {
+    width: 40%;
+}
+
+.description {
+    width: 40%;
+}
+
+.actions{
+    list-style: none;
+    margin: 3em 0 4em 0;
+    height: 6vh;
+}
+
+.actions a{
+    font-family: 'Segoe UI Bold', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.button{
+    background-color: #f32853;
+    font-size: 1.35em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.photo_de_lycee img {
+    width: 450px;
+    height: auto;
+    border-radius: 2em;
+}
+
+.container_bac {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.7em;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Segoe UI Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer ul.button_droit{
+    margin-right: 3em;
+}
+
+footer ul.button_gauche{
+    margin-left: 1em;
+}

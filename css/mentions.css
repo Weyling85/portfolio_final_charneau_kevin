@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../font/Segoe UI Bold.woff') format('woff');
+}
+
 body{
     font-family: Raleway, sans-serif;
     background-attachment: fixed;
     background-image: url("icones/overlay.png"), url("icones/bandwidth-blancetnoir.jpg"); 
-    margin : 0 4em 0 4em;
+    margin : 0 4em 4em 4em;
     color: #E9E9E9;
     font-size: 14px;
 }
@@ -23,3 +30,24 @@ a{
     text-decoration: none;
     color: #73BEFF;
 }
+
+.actions{
+    list-style: none;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.actions a {
+    font-family: 'Segoe UI Bold', sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.button {
+    background-color: #f32853;
+    font-size: 1.35em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+

@@ -13,16 +13,24 @@ header.majeur h2 {
     text-decoration: underline;
 }
 
-.section_style.bac{
-    padding: 8em 0 3em 0;
+.titre {
+    width: 40%;
 }
 
-.titre_bac {
-    width: 50%;
+.description {
+    width: 40%;
 }
 
-.description_bac {
-    width: 50%;
+.actions{
+    list-style: none;
+    margin: 3em 0 8em 0;
+}
+
+.actions a{
+    font-family: 'Segoe UI Bold', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
 }
 
 .button{
@@ -55,7 +63,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5em;
+    margin-top: 5.5em;
 }
 
 footer a {
@@ -63,6 +71,7 @@ footer a {
     text-decoration: none;
     font-family: 'Segoe UI Bold', sans-serif;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 footer li{

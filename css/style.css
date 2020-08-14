@@ -18,6 +18,7 @@
     font-weight: normal;
     src: local('Segoe UI Bold'), url('../font/Segoe UI Bold.woff') format('woff');
 }
+
 @font-face {
     font-family: 'Segoe UI Bold Italic';
     font-style: normal;
@@ -89,6 +90,14 @@ body {
 
 #banniere li{
     margin-top: 14rem;
+}
+
+#banniere h1{
+    color: #aaa;
+    text-decoration: underline;
+    font-size: 3.5em;
+    margin-top: -0.5em;
+    margin-bottom: 3.5em;
 }
 
 #banniere h2 {
@@ -224,9 +233,23 @@ header.major p {
     margin-bottom: 3em;
 }
 
+.formation_1, .formation_2, .formation_3{
+    transition: transform .5s;
+}
+
+.formation_1:hover, .formation_2:hover, .formation_3:hover {
+    transform: scale(1.1);
+}
+
+.formation_a{
+    color: #484848;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+}
+
 .image_bac, .image_licence, .image_bachelor{
     margin-bottom: 40px;
-    box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0.5em 0.5em 0px rgba(0, 0, 0, 0.15);
 }
 
 .image_bac h3, .image_licence h3, .image_bachelor h3{
@@ -235,6 +258,15 @@ header.major p {
     display: block;
     padding: 2em 1em;
     text-align: center;
+    font-size: 17.2px;
+}
+
+.image_bac{
+    margin-right: 2em;
+}
+
+.image_licence{
+    margin-left: 2em;
 }
 
 .image_bac img{
@@ -244,17 +276,16 @@ header.major p {
 
 .image_licence img{
     height: auto;
-    width: 430px;
+    width: 400px;
 }
 
 .image_bachelor img{
     height: auto;
-    width: 420px;
+    width: 400px;
 }
 
 .ligne.section_2 {
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .container_section_3{
@@ -272,6 +303,11 @@ header.major p {
     float: left;
     margin-bottom: 3em;
     width: 50%;
+    transition: transform .5s;
+}
+
+.projet_bis:hover{
+    transform: scale(1.1);
 }
 
 .image.rounded img {
@@ -360,4 +396,14 @@ ul.actions li{
 
 .mentions_legales a{
     color: #484848;
+}
+
+.photo_de_projet img{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.vitrines{
+    margin-right: 5em;
 }
