@@ -47,16 +47,16 @@
         if(empty($lastname) ){
             //on note qu'on a trouvé une erreur ! 
             $formIsValid = false;
-            $errors[] = "Veuillez renseigner votre nom de famille !";
+            $errors[] = "Veuillez entrer un nom valide";
         }
         //mb_strlen calcule la longueur d'une chaîne
         elseif(mb_strlen($lastname) <= 1){
             $formIsValid = false;
-            $errors[] = "Votre nom de famille est court, très court. Veuillez le rallonger !";
+            $errors[] = "Veuillez entrer un nom valide";
         }
         elseif(mb_strlen($lastname) > 30){
             $formIsValid = false;
-            $errors[] = "Votre nom de famille est trop long !";
+            $errors[] = "Veuillez entrer un nom valide";
         }
 
         //exactement pareil pour le prénom
@@ -64,16 +64,16 @@
         if(empty($firstname) ){
             //on note qu'on a trouvé une erreur ! 
             $formIsValid = false;
-            $errors[] = "Veuillez renseigner votre prénom !";
+            $errors[] = "Veuillez entrer un prénom valide";
         }
         //mb_strlen calcule la longueur d'une chaîne
         elseif(mb_strlen($firstname) <= 1){
             $formIsValid = false;
-            $errors[] = "Votre prénom est court, très court. Veuillez le rallonger !";
+            $errors[] = "Veuillez entrer un prénom valide";
         }
         elseif(mb_strlen($firstname) > 30){
             $formIsValid = false;
-            $errors[] = "Votre prénom est trop long !";
+            $errors[] = "Veuillez entrer un prénom valide";
         }
 
         //validation de l'email
@@ -132,12 +132,12 @@ if ($formIsValid == true){
               <div>
                 <div>
                   <ul>
-                    <li><a href="index.php">Home</a></li>
-				            <li><a href="index.php#section_1">About Me</a></li>
-				            <li><a href="index.php#section_2">Formation</a></li>
-                    <li><a href="index.php#section_3">Projets</a></li>
+                    <li><a href="index.html">Home</a></li>
+				            <li><a href="index.html#section_1">About Me</a></li>
+				            <li><a href="index.html#section_2">Formation</a></li>
+                    <li><a href="index.html#section_3">Projets</a></li>
 				            <li><a href="./css/icones/cv.pdf" target="_blank">CV</a></li>
-                    <li><a href="index.php#section_5">Contact</a></li>
+                    <li><a href="index.html#section_5">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -180,19 +180,26 @@ if ($formIsValid == true){
               <textarea type="message" name="message" id="message"></textarea>
           </div>
 
-          <div class="g-recaptcha" data-sitekey="6LdL59kUAAAAAOhuPv7BDxKMPPkIOxLbBZZhcCiC"></div><br />
+          <div class="form-group">
+          <div class="form-check">
+            <input class="form" type="checkbox" value="" required>
+            <label class="form-check" for="invalidCheck3"> J'ai lu et j'accepte les termes et conditions des <a href="./mentionslegales.html" class="mentions_input"> Mentions légales.</a></label>
+          </div>
+        </div>
+
+          <div class="g-recaptcha" data-sitekey="6LdL59kUAAAAAOhuPv7BDxKMPPkIOxLbBZZhcCiC"></div>
 
 
           <?php 
           //affiche les éventuelles erreurs de validations
           if (!empty($errors)) {
               foreach ($errors as $error) {
-                echo '<div>' . $error . '</div>'    ;
+                echo '<div class="erreurs">' . $error . '</div>'    ;
               }
           }   
           ?>
 
-          <button>Envoyer !</button>
+          <button class="button">Envoyer !</button>
         </form>
       </div>
 

@@ -66,7 +66,7 @@ main h1{
     color: white;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 form{
@@ -99,8 +99,25 @@ textarea{
 }
 
 .contact input{
-    width: 15vw;
+    width: 25vw;
     height: 5vh;
+}
+
+.contact input.form{
+    width: 1em;
+    height: 2vh;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+.mentions_input{
+    text-transform: none;
+    text-decoration: none;
+    color: lightblue;
+}
+
+.mentions_input:hover{
+    text-decoration: underline;
 }
 
 .last_name{
@@ -133,7 +150,7 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 0.8rem;
 }
 
 .Message a{
@@ -168,6 +185,40 @@ body{
     line-height: 1.4;
 }
 
+.button{
+    background-color: #f32853;
+    font-size: 1.35em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: solid #f32853 1px;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: "Segoe UI Bold", sans-serif;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.erreurs{
+    color: red;
+    margin-bottom: 2em;
+    transition: transform .5s .5s;
+    animation: alert 1s infinite;
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 footer{
     margin-top: 1rem;
     color: white;
@@ -200,6 +251,7 @@ footer{
 
     .email_enterprise{
         flex-direction: column;
+        margin-bottom: 1em;
     }
 
     .email{
@@ -207,21 +259,94 @@ footer{
         margin-bottom: 1rem;
     }
 
-    .contact input{
-        width: 100%;
-    }
-
     textarea{
         width: 100%;
         height: 60px;
     }
 
+    .form-group{
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .button{
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+
     footer{
         justify-content: center;
         height: 5vh;
+        margin-top: 4em;
     }
 
     .mentions_legales{
         margin-right: 0rem; 
+    }
+}
+
+@media only screen and (max-width: 1030px) and (orientation: landscape){
+    .nom_prenom{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .email_enterprise{
+        flex-direction: row;
+        margin-bottom: 0em;
+    }
+
+    textarea{
+        width: 340px;
+        height: 60px;
+    }
+
+    .last_name{
+        margin-right: 3rem;
+        margin-bottom: 1rem
+    }
+
+    .email{
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .button{
+        margin-top: 1em;
+    }
+
+    .contact input{
+        width: 35vw;
+        height: 7vh;
+    }
+
+    footer{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    footer{
+        margin-top: 0em;
+    };
+}
+
+@media screen and (max-width: 450px){
+    .contact input{
+        width: 45vw;
+    }
+
+    .mentions_legales{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .contact input{
+        width: 55vw;
+    }
+
+    .mentions_legales{
+        font-size: 13px;
     }
 }

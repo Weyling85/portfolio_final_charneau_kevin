@@ -14,7 +14,7 @@ header.majeur h2 {
 }
 
 .titre {
-    width: 40%;
+    margin-right: 9.8em;
 }
 
 .description {
@@ -23,7 +23,7 @@ header.majeur h2 {
 
 .actions{
     list-style: none;
-    margin: 3em 0 8em 0;
+    margin: 3em 0 4em 0;
 }
 
 .actions a{
@@ -45,9 +45,10 @@ header.majeur h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60vh;
 }
 
-.photo_de_lycee img {
+.photo img {
     width: 450px;
     height: auto;
     border-radius: 2em;
@@ -84,4 +85,79 @@ footer ul.button_droit{
 
 footer ul.button_gauche{
     margin-left: 1em;
+}
+
+@media only screen and (max-width:1200px){
+    .ligne{
+        flex-direction: column;
+    }
+
+    .description{
+        width: 70%;
+    }
+
+    .description header.majeur{
+        text-align: center;
+        margin: 2em 0 2em 0;
+    }
+
+    .titre{
+        margin-right: 0em;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .actions{
+        margin: 3em 0 3em 0;
+    }
+
+    .photo img{
+        width: 300px;
+    }
+
+    .button {
+        padding: 12px 22px;
+    }
+
+    ul {
+        padding: 0 0 0 0;
+    }
+
+    footer ul.button_gauche{
+        margin-left: 0em;
+    }
+
+    footer ul.button_droit{
+        margin-right: 0em;
+    }
+
+    footer{
+        margin-top: 2.5em;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .actions{
+        margin: 3em 0 3em 0;
+    }
+
+    .button{
+        background-color: #f32853;
+        font-size: 1em;
+        padding: 10px 18px;
+    }
+
+    footer{
+        margin-top: 2.5em;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .photo img{
+        width: 250px;
+    }
+
+    .button{
+        font-size: 0.8em;
+    }
 }

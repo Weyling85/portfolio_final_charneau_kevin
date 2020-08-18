@@ -145,3 +145,9 @@
 		font-size: 1.5rem;
 	}
 }
+
+@media only screen and (max-height: 400px) and (orientation: landscape){
+    .menu-wrap .menu > div > div > ul > li{
+        padding: 0.3rem;
+    }
+}

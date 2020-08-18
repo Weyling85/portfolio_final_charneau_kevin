@@ -83,32 +83,40 @@ a {
 .nom_prenom{
     display: flex;
     flex-direction: row;
-    margin-bottom: 3rem;
+    margin-bottom: 2em;
 }
 
 .email_enterprise{
     display: flex;
     flex-direction: row;
-    margin-bottom: 3rem;
+    margin-bottom: 2em;
 }
 
 textarea{
-    width: 435px;
-    height: 80px;
+    width: 363px;
+    height: 79px;
+}
+
+.form-group{
+    text-align: center;
+    margin: 1em 0;
 }
 
 .recommandation {
     width: 40%;
-    margin-top: 5rem;
     justify-content: flex-end;
-    border: 2px solid yellow;
     border-radius: 16px;
-    padding: 0.5rem;
+    padding: 1em;
     margin-bottom: 0.75rem;
 }
 
 .recommandation input{
     width: 15vw;
+    height: 5vh;
+}
+
+.recommandation input.form{
+    width: 1em;
     height: 5vh;
 }
 
@@ -142,7 +150,7 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5em;
 }
 
 .message a{
@@ -153,20 +161,38 @@ textarea{
 }
 
 .recommandation a{
-    display: flex;
+    display: contents;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
 }
 
+.recommandation input.form{
+    width: 2vw;
+    height: 2vh;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+.mentions_input{
+    text-transform: none;
+    text-decoration: none;
+    color: lightblue;
+    margin-left: 3em;
+    margin-top: -1em;
+}
+
+.mentions_input:hover{
+    text-decoration: underline;
+}
+
 .carouseul{
     color: white;
     width: 45%;
-    height: 15rem;
+    height: 15em;
     margin-top: 2rem;
     margin-left: 5rem;
     justify-content: flex-end;
-    border: 2px solid yellow;
     border-radius: 16px;
     padding: 2em 0 2em 0;
 }
@@ -191,7 +217,7 @@ body{
 }
 
 footer{
-    margin-top: 1rem;
+    margin-top: 0.2em;
     color: white;
     display: flex;
     justify-content: flex-end;
@@ -208,29 +234,74 @@ footer{
     color: #BBD2E7;
 }
 
+.button{
+    background-color: #f32853;
+    font-size: 1.35em;
+    text-decoration: none;
+    padding: 15px 25px;
+    border: solid #f32853 1px;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: "Segoe UI Bold", sans-serif;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.erreurs{
+    color: red;
+    margin-bottom: 1em;
+    transition: transform .5s .5s;
+    animation: alert 1s infinite;
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) and (orientation: landscape){
+    .recommandation{
+        padding: 8em;
+    }
+}
+
 @media screen and (max-width: 1030px)
 {
     .recommandation_affichage{
         flex-direction: column;
     }
 
-    .recommandation input{
-        width: 43vw;
+    .recommandation input, textarea{
+        width: 53vw;
     }
 
     .recommandation{
         width: 90%;
     }
 
+    .recommandation input.form{
+        width: 4vw;
+        height: 2vh;
+    }
+
     .carouseul{
+        margin-top: 0em;
         margin-left: 0rem;
-        width: 90%;
-        height: 20%;
+        width: 100%;
     }
 
     .nom_prenom{
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     }
 
     .last_name{
@@ -251,11 +322,6 @@ footer{
         width: 100%;
     }
 
-    textarea{
-        width: 100%;
-        height: 60px;
-    }
-
     footer{
         justify-content: center;
         height: 5vh;
@@ -265,3 +331,96 @@ footer{
         margin-right: 0rem; 
     }
 }
+
+@media only screen and (max-width: 1030px) and (orientation: landscape){
+    .nom_prenom{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .email_enterprise{
+        flex-direction: row;
+        margin-bottom: 0em;
+    }
+
+    textarea{
+        width: 340px;
+        height: 60px;
+    }
+
+    .last_name{
+        margin-right: 3rem;
+        margin-bottom: 1rem
+    }
+
+    .email{
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .button{
+        margin-top: 1em;
+    }
+
+    .recommandation input{
+        width: 35vw;
+        height: 7vh;
+    }
+
+    footer{
+        margin-bottom: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    footer{
+        margin-top: 3em;
+    }
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape){
+    .recommandation input.form{
+        width: 2vw;
+        height: 4vh;
+    }
+
+    footer{
+        margin-top: 0em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    main h1{
+        margin-top: 2em;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    footer{
+        margin-top: 5em;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    main h1{
+        font-size: 26px;
+    }
+
+    footer{
+        margin-top: 10em;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    main h1{
+        font-size: 24px;
+    }
+
+    footer{
+        margin-top: 18em;
+        font-size: 12px;
+    }
+}
+
